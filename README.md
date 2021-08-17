@@ -34,7 +34,6 @@ So, please make sure all are installed in you machine.
 * Clone the repo
    ```sh
    git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
-
   
 ### Prerequisites
 * Install Git in you machine. [Get Git](https://git-scm.com/downloads)
@@ -49,7 +48,8 @@ So, please make sure all are installed in you machine.
 * Go to your folder which you want to clone this project and type below clone command in your command prompt (window) or in your terminal (MacOs and Linux).
     ```sh
    git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
-* Open cloned project in you IDE.
+* If you don't want to clone, you can download as zip file by clicking `Code` button of this project and choose `Download Zip` and unzip in your machine. 
+* Open cloned or downloaded project in you IDE.
 * Change your postgresql username and password in spring datasource username and password fields in `application.properties` file. 
 * Postgresql default username is postgres and password is no set and if you don't do update password, you can set just blank in password field.
 * If you don't use postgresql database, please change your database driver in `pom.xml` file and change your database dialect in `application.properties` file. 
