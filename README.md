@@ -13,13 +13,12 @@
 - [Contributing](#Contributing)
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 This is the sample backend microservice project for join table by using spring data jpa.
 You can learn how to connect and join two table by using spring data jpa.
 
-### Built With
 
+### Built With
 This project is build with
 * [Java](https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html)
 * [Maven](https://maven.apache.org/download.cgi)
@@ -30,22 +29,24 @@ This project is build with
 This project is built with java, maven, postgresql and use project lombok as plugin.
 So, please make sure all are installed in you machine.
 
-### Clone Project
 
+### Clone Project
 * Clone the repo
    ```sh
    git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
 
+  
 ### Prerequisites
 * Install Git in you machine. [Get Git](https://git-scm.com/downloads)
-* Install Java and Maven in your machine. <br> [Get Java]((https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html)) | [Get Maven](https://maven.apache.org/download.cgi)
-* Install your favourite java IDE in your machine eg. IntelliJ or Eclipse
+* Install Java and Maven in your machine. [Get Java](https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html) | [Get Maven](https://maven.apache.org/download.cgi)
+* Install your favourite java IDE in your machine eg. IntelliJ or Eclipse.
 * Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/)
-* Install project lombok in your IDE <br> (if you don't know how to install lombok in your IDE, please reference in google)
+* Install project lombok in your IDE. (if you don't know how to install lombok in your IDE, please reference in google)
 * Install Postman for testing api. [Get Postman](https://www.postman.com/)
 
+
 ### Instruction
-* Go to your folder which you want to clone this project and <br>type below clone command in your command prompt (window) or in your terminal (MacOs and Linux).
+* Go to your folder which you want to clone this project and type below clone command in your command prompt (window) or in your terminal (MacOs and Linux).
     ```sh
    git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
 * Open cloned project in you IDE.
@@ -54,23 +55,23 @@ So, please make sure all are installed in you machine.
 * If you don't use postgresql database, please change your database driver in `pom.xml` file and change your database dialect in `application.properties` file. 
     * If you don't know your database driver and dialect, please reference in google. <br> eg. maven dependency for oracle database and spring jpa dialect properties for oracle driver.
 * Insert some role into your database by querying in database console.
-    * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/), 
+    * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/).
     * If so, firstly, you need to connect to your database with DBeaver.
     * After that you can add by clicking '+' sign in your role table or you can run query in DBeaver console like below.
   ```sh 
   insert into role (id, role_name) values (1, 'admin'); insert into role (id, role_name) values (2, 'normal user');
 * Run the project in your IDE.
-* Import `sample postman api request.json` file under project directory into your Postman and test it by click send button in your postman.
+* Import `sample postman api request.json` file under project directory into your Postman.
+* Now, you can test this project by click send button in your postman.
 
 
 ## Contact
-
-Name - Ye Win <br> LinkedIn profile -  [Ye Win LinkedIn](linkedin.com/in/ye-win-1a33a292)  <br> Email Address - yewin.mmr@gmail.com
+Name - Ye Win <br> LinkedIn profile -  [Ye Win's LinkedIn](https://www.linkedin.com/in/ye-win-1a33a292/)  <br> Email Address - yewin.mmr@gmail.com
 
 Project Link: [Spring Data JPA Join Table Example](https://github.com/yewin-mm/spring-data-jpa-join-table-example)
 
-## Contributing
 
+## Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 <br>If you want to contribute....
 1. Fork the Project
