@@ -40,7 +40,7 @@ So, please make sure all are installed in you machine.
 * Install Git in you machine. [Get Git](https://git-scm.com/downloads)
 * Install Java and Maven in your machine. <br> [Get Java]((https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html)) | [Get Maven](https://maven.apache.org/download.cgi)
 * Install your favourite java IDE in your machine eg. IntelliJ or Eclipse
-* Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/
+* Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/)
 * Install project lombok in your IDE <br> (if you don't know how to install lombok in your IDE, please reference in google)
 * Install Postman for testing api. [Get Postman](https://www.postman.com/)
 
@@ -55,8 +55,8 @@ So, please make sure all are installed in you machine.
     * If you don't know your database driver and dialect, please reference in google. <br> eg. maven dependency for oracle database and spring jpa dialect properties for oracle driver.
 * Insert some role into your database by querying in database console.
     * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/), 
-    * If so, firstly, you need to connect to your database with DBeaver 
-    * after that you can add by clicking '+' sign in your role table or you can run query in DBeaver console like below.
+    * If so, firstly, you need to connect to your database with DBeaver.
+    * After that you can add by clicking '+' sign in your role table or you can run query in DBeaver console like below.
   ```sh 
   insert into role (id, role_name) values (1, 'admin'); insert into role (id, role_name) values (2, 'normal user');
 * Run the project in your IDE.
