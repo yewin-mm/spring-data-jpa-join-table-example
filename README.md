@@ -65,7 +65,7 @@ Click below links.
 * [Spring Boot Sample CRUD Application](https://github.com/yewin-mm/spring-boot-sample-crud)
 
 
-If you already knew above links and good enough basic knowledge with Java Spring Boot, you can keep learn this project and see the "Instruction" below.
+If you already knew above links and you have good enough basic knowledge with Java Spring Boot, you can keep learn this project and see the "Instruction" below.
 
 
 ### Clone Project
