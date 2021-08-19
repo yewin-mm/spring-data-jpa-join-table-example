@@ -103,7 +103,7 @@ If you already knew above links and you have good enough basic knowledge with Ja
     * You can type insert query in your database console.
     * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/).
     * If so, firstly, you need to connect to your database with DBeaver. (if you don't know, see how to connect database with Dbeaver in google)
-    * After that find 'Role' table under posgres schema which will auto create by running application. If you can't find, just click refresh and see again under postgres schema. <br>
+    * After that find 'Role' table under postgres schema which will auto create by running application. If you can't find, just click refresh and see again under postgres schema. <br>
         you can add by clicking '+' sign in your 'Role' table or you can run below query in DBeaver console (please go Execute SQL Statement in your DBeaver) like
   ```sh 
   insert into role (id, role_name) values (1, 'admin'); insert into role (id, role_name) values (2, 'normal user');
