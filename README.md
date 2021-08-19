@@ -101,7 +101,7 @@ If you already knew above links and you have good enough basic knowledge with Ja
     * Click run button on IDE or Run by right click on `JpaJoinTableExampleApplication` class which has main method and choose run or run as java application.
     * See the console log and find below text log in your IDE.
         * eg. Started JpaJoinTableExampleApplication log (it's mean application is successfully run) 
-        * eg. APPLICATION FAILED TO START log. (it's mean application is cannot run and got error). For that case, please find the root error and reference to google for that error. If some error like port is already use, you need to change the port in `application.properties` file or stop (terminate) other process or application which is using the same port (8080).
+        * eg. APPLICATION FAILED TO START log. (it's mean application cannot run and got error). For that case, please find the root error and reference to google for that error. If some error like port is already use, you need to change the port in `application.properties` file or stop (terminate) other process or application which is using the same port (8080).
 * Insert some data into 'Role' table in your database by querying in database console.
     * You can type insert query in your database console.
     * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/).
