@@ -60,12 +60,12 @@ So, please make sure all are installed in you machine.
 
 ### Before you begin
 Before learn and see this project. <br>
-If you are not good enough with Java Spring Boot, you should learn below example projects first. <br>
+If you are not good enough on basic JPA CRUD knowledge with Java Spring Boot, you should learn below example projects first. <br>
 Click below links.
 * [Spring Boot Sample CRUD Application](https://github.com/yewin-mm/spring-boot-sample-crud)
 
 
-If you already knew above links and good enough with Java Spring Boot, you can keep learn this project and see the "Instruction" below.
+If you already knew above links and good enough basic knowledge with Java Spring Boot, you can keep learn this project and see the "Instruction" below.
 
 
 ### Clone Project
@@ -93,10 +93,10 @@ If you already knew above links and good enough with Java Spring Boot, you can k
     * So, if you don't do any updating password in your database, you can set just blank in password field.
     * If you got error with database when you run the application, please see in google as reference. 
     * Because sometime, you might got no privilege or permission denied error in Postgresql. If so, you need to create new user or new database with name 'postgres' and grant access on that. (please see in google as reference for that)
-* If you don't use Postgresql database, please change your database driver in `pom.xml` file and change your database dialect in `application.properties` file. 
-    * If you don't know your database driver and dialect, please reference in google. <br> eg. Your installed database is Mysql, 
+* If you don't use Postgresql database, please change your database driver in `pom.xml` file and change your database url, username, password and dialect in `application.properties` file. 
+    * If you don't know your database driver, url and dialect, please reference in google. <br> eg. Your installed database is Mysql, 
         * for driver which to add in `pom.xml`, please search in google like "Maven dependency for mysql database" or "Spring JPA Mysql example" 
-        * for dialect which to add in `application.properties` file, please search in google like "Spring jpa dialect properties sample for mysql driver"
+        * for url and dialect which to add in `application.properties` file, please search in google like "Spring jpa url and dialect properties sample for mysql driver"
 * Run the project in your IDE.
     * Click run button on IDE or Run by right click on `JpaJoinTableExampleApplication` class which has main method and choose run or run as java application.
 * Insert some data into 'Role' table in your database by querying in database console.
@@ -112,7 +112,7 @@ If you already knew above links and good enough with Java Spring Boot, you can k
     * Click in your Postman (top left corner) import -> file -> upload files -> {choose that json file} and open/import.
     * After that, you can see the folder which you import from file in your Postman.
 * Now, you can 'Test' this project by calling API from Postman.
-    * Click 'Send' button for each API request (which you already imported from above step) in your Postman and see the response. 
+    * Click 'Send' button for each API request (open the folder which you already imported from above step and there you can see three api request) in your Postman and see the response. 
     * You can check data in database too (here you can check data in tables (User, Role) by DBeaver tools or you can manually select query in your database console)
 
 
