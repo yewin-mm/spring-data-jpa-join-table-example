@@ -6,24 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "get all user api",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/getAllUser",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"getAllUser"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "save user api",
 			"request": {
 				"method": "POST",
@@ -54,6 +36,24 @@
 							"key": "address",
 							"value": "Ygn"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllUser"
 					]
 				}
 			},
