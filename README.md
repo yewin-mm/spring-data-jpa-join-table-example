@@ -59,6 +59,8 @@ This project is built with java, maven, postgresql and use project lombok as plu
 So, please make sure all are installed in you machine.
 
 ### Before you begin
+If you are new in Git, Github and new in Spring Boot configuration structure, <br>
+You should see basic details instruction first in here [Spring Boot Application Instruction](https://github.com/yewin-mm/spring-boot-app-instruction)
 Before learn and see this project. <br>
 If you are not good enough on basic JPA CRUD knowledge with Java Spring Boot, you should learn below example projects first. <br>
 Click below links.
@@ -74,34 +76,12 @@ If you already knew above links and you have good enough basic knowledge with Ja
    git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
   
 ### Prerequisites
-* Install Git in you machine. [Get Git](https://git-scm.com/downloads)
-* Install Java and Maven in your machine. [Get Java](https://www.oracle.com/au/java/technologies/javase/javase-jdk8-downloads.html) | [Get Maven](https://maven.apache.org/download.cgi)
-* Install your favourite java IDE in your machine eg. IntelliJ or Eclipse.
-* Install Postgresql database in your machine [Get Postgresql](https://www.postgresql.org/download/)
-* Install project lombok in your IDE. (if you don't know how to install lombok in your IDE, please reference in google)
-* Install Postman for testing api. [Get Postman](https://www.postman.com/)
+Prerequisites can be found in here [Spring Boot Application Instruction](https://github.com/yewin-mm/spring-boot-app-instruction).
 
 
 ### Instruction
-* Go to your folder which you want to clone this project and type below clone command in your command prompt (window) or in your terminal (MacOs and Linux).
-    ```sh
-   git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
-* If you don't want to clone this project, you can download as zip file by clicking above (top right corner) `Code` button of this repository and choose `Download ZIP` and unzip in your machine. 
-* Open (IntelliJ) / Import as Maven Project (Eclipse) to this cloned or downloaded project in you IDE.
-* Change your Postgresql username and password in spring datasource username and password fields in `application.properties` file. 
-    * Postgresql default username is postgres and default password is no set. 
-    * So, if you don't do any updating password in your database, you can set just blank in password field.
-    * If you got error with database when you run the application, please see in google as reference. 
-    * Because sometime, you might got no privilege or permission denied error in Postgresql. If so, you need to create new user or new database with name 'postgres' and grant access on that. (please see in google as reference for that)
-* If you don't use Postgresql database, please change your database driver in `pom.xml` file and change your database url, username, password and dialect in `application.properties` file. 
-    * If you don't know your database driver, url and dialect, please reference in google. <br> eg. Your installed database is Mysql, 
-        * for driver which to add in `pom.xml`, please search in google like "Maven dependency for mysql database" or "Spring JPA Mysql example" 
-        * for url and dialect which to add in `application.properties` file, please search in google like "Spring jpa url and dialect properties sample for mysql driver"
-* Run the project in your IDE.
-    * Click run button on IDE or Run by right click on `JpaJoinTableExampleApplication` class which has main method and choose run or run as java application.
-    * See the console log and find below text log in your IDE.
-        * eg. Started JpaJoinTableExampleApplication log (it's mean application is successfully run) 
-        * eg. APPLICATION FAILED TO START log. (it's mean application cannot run and got error). For that case, please find the root error and reference to google for that error. If some error like port is already use, you need to change the port in `application.properties` file or stop (terminate) other process or application which is using the same port (8080).
+* Change your database username and password in `application.properties`.
+* Run the project in your IDE. Please make sure application was successfully running.
 * Insert some data into 'Role' table in your database by querying in database console.
     * You can type insert query in your database console.
     * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/).
@@ -114,10 +94,15 @@ If you already knew above links and you have good enough basic knowledge with Ja
 * Import `jpa-join-table-example-postman-api-request.json` file under project directory (see that file in project directory) into your installed Postman application.
     * Click in your Postman (top left corner) import -> file -> upload files -> {choose that json file} and open/import.
     * After that, you can see the folder which you import from file in your Postman.
+    
 * Now, you can 'Test' this project by calling API from Postman.
-    * Click 'Send' button for each API request (open the folder which you already imported from above step and there you can see three api request) in your Postman and see the response. 
+    * Open your imported folder in postman and inside this folder, you will see 3 API and you can test it all. 
+    * Before testing, please make sure some data should be in `Role` table first. 
     * You can check data in database too (here you can check data in tables (User, Role) by DBeaver tools or you can manually select query in your database console)
+    
+* After that you can see the code and check the code which you don't know. You can learn it and you can apply in your job or study fields.
 
+***Have Fun and Enjoy in Learning Code***
 
 ## Contact
 Name - Ye Win <br> LinkedIn profile -  [Ye Win's LinkedIn](https://www.linkedin.com/in/ye-win-1a33a292/)  <br> Email Address - yewin.mmr@gmail.com
