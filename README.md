@@ -82,12 +82,11 @@ Prerequisites can be found in here [Spring Boot Application Instruction](https:/
 ### Instruction
 * Change your database username and password in `application.properties`.
 * Run the project in your IDE. Please make sure application was successfully running.
+* You can check in your database is that there has 'Role and User' table were auto created or not under postgres schema by database GUI tools like ***DBeaver***.
 * Insert some data into 'Role' table in your database by querying in database console.
-    * You can type insert query in your database console.
-    * Here you can use database gui tools like [Dbeaver](https://dbeaver.io/).
-    * If so, firstly, you need to connect to your database with DBeaver. (if you don't know, see how to connect database with Dbeaver in google)
-    * After that find 'Role' table under postgres schema which will auto create by running application. If you can't find, just click refresh and see again under postgres schema. <br>
-        you can add by clicking '+' sign in your 'Role' table or you can run below query in DBeaver console (please go Execute SQL Statement in your DBeaver) like
+* Find 'Role' table under postgres schema which will auto create by running application. 
+* If you can't find, just click refresh and see again under postgres schema.
+* You can add by clicking '+' sign in your 'Role' table ***or*** you can run below query in DBeaver console (please go Execute SQL Statement in your DBeaver) like
   ```sh 
   insert into role (id, role_name) values (1, 'admin'); insert into role (id, role_name) values (2, 'normal user');
 
@@ -96,7 +95,7 @@ Prerequisites can be found in here [Spring Boot Application Instruction](https:/
     * After that, you can see the folder which you import from file in your Postman.
     
 * Now, you can 'Test' this project by calling API from Postman.
-    * Open your imported folder in postman and inside this folder, you will see 3 API and you can test it all. 
+    * Open your imported folder in postman and inside this folder, you will see total of 3 API requests and you can test it all by clicking `Send` button and see the response.
     * Before testing, please make sure some data should be in `Role` table first. 
     * You can check data in database too (here you can check data in tables (User, Role) by DBeaver tools or you can manually select query in your database console)
     
