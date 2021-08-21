@@ -41,8 +41,6 @@
 - [Contact Me](#contact)
 - [Contributing](#Contributing)
 
-aa [aa]: https://img.shields.io/static/v1?style=social&logo=appveyor <br>
-![](https://img.shields.io/badge/code-green.svg?style=flat)
 
 ## About The Project
 This is the sample backend microservice project for join table by using spring data jpa.
