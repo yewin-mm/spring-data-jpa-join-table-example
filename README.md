@@ -62,7 +62,7 @@ So, please make sure all are installed in you machine.
 If you are new in Git, Github and new in Spring Boot configuration structure, <br>
 You should see basic details instruction first in here
 [Spring Boot Application Instruction](https://github.com/yewin-mm/spring-boot-app-instruction) <br>
-If you are not good enough on basic JPA CRUD knowledge with Java Spring Boot, you should learn below example projects first. <br>
+If you are not good enough in basic JPA CRUD knowledge with Java Spring Boot, you should learn below example projects first. <br>
 Click below links.
 * [Spring Boot Sample CRUD Application](https://github.com/yewin-mm/spring-boot-sample-crud)
 
