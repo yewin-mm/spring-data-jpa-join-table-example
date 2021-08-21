@@ -41,6 +41,8 @@
 - [Contact Me](#contact)
 - [Contributing](#Contributing)
 
+aa [aa]: https://img.shields.io/static/v1?style=social&logo=appveyor <br>
+![](https://img.shields.io/badge/code-green.svg?style=flat)
 
 ## About The Project
 This is the sample backend microservice project for join table by using spring data jpa.
@@ -86,7 +88,7 @@ If you already knew above links and you have good enough basic knowledge with Ja
 * Go to your folder which you want to clone this project and type below clone command in your command prompt (window) or in your terminal (MacOs and Linux).
     ```sh
    git clone https://github.com/yewin-mm/spring-data-jpa-join-table-example.git
-* If you don't want to clone this project, you can download as zip file by clicking above (top right corner) `Code` button of this repository and choose `Download Zip` and unzip in your machine. 
+* If you don't want to clone this project, you can download as zip file by clicking above (top right corner) ![](https://img.shields.io/badge/Code-green.svg?style=flat) button of this repository and choose `Download ZIP` and unzip in your machine. 
 * Open (IntelliJ) / Import as Maven Project (Eclipse) to this cloned or downloaded project in you IDE.
 * Change your Postgresql username and password in spring datasource username and password fields in `application.properties` file. 
     * Postgresql default username is postgres and default password is no set. 
