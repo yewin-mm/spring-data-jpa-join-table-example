@@ -56,7 +56,7 @@ This project is built with
 
 ## Getting Started
 This project is built with java, maven, postgresql and use project lombok as plugin.
-So, please make sure all are installed in you machine.
+So, please make sure all are installed in your machine.
 
 ### Before you begin
 If you are new in Git, Github and new in Spring Boot configuration structure, <br>
