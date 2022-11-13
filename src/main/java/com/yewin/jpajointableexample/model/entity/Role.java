@@ -19,8 +19,10 @@ import java.util.List;
  */
 @Getter
 @Setter
-@ToString(exclude = "userList") // to avoid stackoverflow error which printing out infinite data (eg. when we add userList to print -> it will print User entity too because it has reference type User and User will call Role entity to print too (because User entity include Role as field) and it will never end calling each others until reach maximum size.)
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) // to ignore (hide) hibernate initializer filed in response
+@ToString(exclude = "userList")
+// to avoid stackoverflow error which printing out infinite data (eg. when we add userList to print -> it will print User entity too because it has reference type User and User will call Role entity to print too (because User entity include Role as field) and it will never end calling each others until reach maximum size.)
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+// to ignore (hide) hibernate initializer filed in response
 public class Role {
 
     @Id
@@ -30,12 +32,13 @@ public class Role {
     private String roleName;
 
     @JsonIgnore
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "role") // one role can have many users and use fetch type to lazy to avoid EAGER loading and to get good performance
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "role")
+    // one role can have many users and use fetch type to lazy to avoid EAGER loading and to get good performance
     private List<User> userList;
 
     /**
      * instead of @ToString(exclude = "userList"), we can add toString() method as manually like below.
-      */
+     */
     /*@Override
     public String toString() {
         return "Role{" +

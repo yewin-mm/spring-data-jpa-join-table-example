@@ -28,16 +28,16 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
-    public List<User> getAllUser(){
+    public List<User> getAllUser() {
 
         List<User> userList = userRepository.findAll();
-        logger.info("Database Response size: {}",userList.size());
+        logger.info("Database Response size: {}", userList.size());
         return userList;
 
     }
 
 
-    public ResponseEntity saveUser(String name, String password, String phone, String address){
+    public ResponseEntity saveUser(String name, String password, String phone, String address) {
 
         ResponseEntity responseEntity;
 
@@ -60,10 +60,10 @@ public class UserService {
         try {
 
             user = userRepository.save(user); // save into users table and get return value value from save method to get user id (which id is auto increment <auto generated>).
-            String msg = "Successfully save user with id: "+user.getId();
+            String msg = "Successfully save user with id: " + user.getId();
             responseEntity = new ResponseEntity<>(msg, HttpStatus.OK);
 
-        }catch (InvalidDataAccessApiUsageException dae) { // to catch role id is not valid (not in role table) error.
+        } catch (InvalidDataAccessApiUsageException dae) { // to catch role id is not valid (not in role table) error.
             logger.error(dae.getMessage());
             String errMsg = "Cannot save User because Role Id: " + user.getRole().getId() + " is not present in role table. Please insert Role Id: " + user.getRole().getId() + " in Role table first.!!!";
             responseEntity = new ResponseEntity(errMsg, HttpStatus.BAD_REQUEST);
@@ -74,7 +74,7 @@ public class UserService {
     }
 
 
-    public ResponseEntity changeRole(Long userId, Integer roleId){
+    public ResponseEntity changeRole(Long userId, Integer roleId) {
 
         ResponseEntity responseEntity;
         User user;
@@ -87,22 +87,22 @@ public class UserService {
         Optional<User> optionalUser = userRepository.findById(userId); // to get current (existing) user data from database with user id which can getting from api by parameter.
 
         // check findById is getting data or not, if not, we need to request valid user id again which existed in db or we need to check in db for at least one user data is existed or not. if not existed any user data, we need to call save user Api first.
-        if(!optionalUser.isPresent()) {
+        if (!optionalUser.isPresent()) {
 
             String errMsg = "Input User Id: " + userId + " is wrong. Please type valid User Id.!!!";
             responseEntity = new ResponseEntity(errMsg, HttpStatus.NOT_FOUND);
             logger.warn(errMsg);
             return responseEntity; // return input id invalid error response.
 
-        }else {
+        } else {
             user = optionalUser.get(); // get user object from Optional <User> object.
         }
 
         // check role id from database and role id from input (by parameter) are equal or not.
         // if equal, we don't need to update into database and it can save time and get good performance than saving same value in db.
         // here I use .equal method when comparing two integers, because it's not primitive type (int) and it's Wrapper class (non primitive) (Integer).
-        if(user.getRole().getId().equals(roleId)){
-            String errMsg = "Input Role Id: " + roleId + " is already updated in database for User Id: " + userId +".!!!";
+        if (user.getRole().getId().equals(roleId)) {
+            String errMsg = "Input Role Id: " + roleId + " is already updated in database for User Id: " + userId + ".!!!";
             logger.warn(errMsg);
             responseEntity = new ResponseEntity(errMsg, HttpStatus.NOT_FOUND);
             return responseEntity; // return input id invalid error response.
@@ -114,7 +114,7 @@ public class UserService {
 
         userRepository.save(user); // save into db and all existing user data are same and just only role id was changed by above code.
 
-        String msg = "Successfully updated Role Id: " + user.getRole().getId() + " for User Id: "+ user.getId() + " .!!!";
+        String msg = "Successfully updated Role Id: " + user.getRole().getId() + " for User Id: " + user.getId() + " .!!!";
         responseEntity = new ResponseEntity(msg, HttpStatus.OK);
 
         return responseEntity;

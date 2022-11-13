@@ -12,8 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JpaJoinTableExampleApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(JpaJoinTableExampleApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(JpaJoinTableExampleApplication.class, args);
+    }
 
 }

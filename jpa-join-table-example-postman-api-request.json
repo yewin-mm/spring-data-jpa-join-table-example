@@ -1,91 +1,91 @@
 {
-	"info": {
-		"_postman_id": "72452091-cd15-4cf3-b5b5-b85fd3fc3360",
-		"name": "jpa-join-table-example-sample-request",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "save user api",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/saveUser?username=Ye Win&password=pass1&phone=+959234234234&address=Ygn",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"saveUser"
-					],
-					"query": [
-						{
-							"key": "username",
-							"value": "Ye Win"
-						},
-						{
-							"key": "password",
-							"value": "pass1"
-						},
-						{
-							"key": "phone",
-							"value": "+959234234234"
-						},
-						{
-							"key": "address",
-							"value": "Ygn"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get all user api",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/getAllUser",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"getAllUser"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "change role api",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/changeRole?userId=1&roleId=1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"changeRole"
-					],
-					"query": [
-						{
-							"key": "userId",
-							"value": "1"
-						},
-						{
-							"key": "roleId",
-							"value": "1"
-						}
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "72452091-cd15-4cf3-b5b5-b85fd3fc3360",
+    "name": "jpa-join-table-example-sample-request",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "save user api",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/saveUser?username=Ye Win&password=pass1&phone=+959234234234&address=Ygn",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "saveUser"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "Ye Win"
+            },
+            {
+              "key": "password",
+              "value": "pass1"
+            },
+            {
+              "key": "phone",
+              "value": "+959234234234"
+            },
+            {
+              "key": "address",
+              "value": "Ygn"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all user api",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/getAllUser",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "getAllUser"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "change role api",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/changeRole?userId=1&roleId=1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "changeRole"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "1"
+            },
+            {
+              "key": "roleId",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }

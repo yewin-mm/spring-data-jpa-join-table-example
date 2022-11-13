@@ -30,16 +30,16 @@ public class UserController {
     UserService service;
 
     @GetMapping("/getAllUser")
-    public ResponseEntity getAllUser(){
+    public ResponseEntity getAllUser() {
 
         logger.info("==================== Start get all user method!!! ====================");
         ResponseEntity responseEntity;
-        try{
+        try {
 
             List<User> userList = service.getAllUser();
             responseEntity = new ResponseEntity<>(userList, HttpStatus.OK);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             logger.error(e.getMessage());
             responseEntity = new ResponseEntity("Something went wrong. Please contact to your administrator.!!!", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -53,13 +53,13 @@ public class UserController {
     }
 
     @PostMapping("/saveUser")
-    public ResponseEntity saveUser(@RequestParam String username, @RequestParam String password, @RequestParam String phone, @RequestParam String address){
+    public ResponseEntity saveUser(@RequestParam String username, @RequestParam String password, @RequestParam String phone, @RequestParam String address) {
 
         logger.info("==================== Start save user method!!! ====================");
         logger.info("Request Param - username: {}, password: {}, phone: {}, adderss: {}", username, password, phone, address);
         ResponseEntity responseEntity;
 
-        try{
+        try {
 
             /**
              * here we can add validation condition for require fields before calling to service class or before saving into db.
@@ -69,7 +69,7 @@ public class UserController {
              */
             responseEntity = service.saveUser(username, password, phone, address);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             logger.error(e.getMessage());
             responseEntity = new ResponseEntity("Something went wrong. Please contact to your administrator.!!!", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -83,7 +83,7 @@ public class UserController {
     }
 
     @PostMapping("/changeRole")
-    public ResponseEntity changeRole(@RequestParam Long userId, @RequestParam Integer roleId){
+    public ResponseEntity changeRole(@RequestParam Long userId, @RequestParam Integer roleId) {
 
         logger.info("==================== Start change role method!!! ====================");
         logger.info("Request Param - role id: {}", roleId);
@@ -97,12 +97,12 @@ public class UserController {
              */
             responseEntity = service.changeRole(userId, roleId);
 
-        }catch (InvalidDataAccessApiUsageException dae){ // to catch role id is not valid (not in role table) error.
+        } catch (InvalidDataAccessApiUsageException dae) { // to catch role id is not valid (not in role table) error.
             logger.error(dae.getMessage());
             String errMsg = "Input Role Id: " + roleId + " is not present in role table. Please insert Role Id: " + roleId + " in Role table first or type valid Role Id.!!!";
             responseEntity = new ResponseEntity(errMsg, HttpStatus.BAD_REQUEST);
 
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             logger.error(e.getMessage());
             responseEntity = new ResponseEntity("Something went wrong. Please contact to your administrator.!!!", HttpStatus.INTERNAL_SERVER_ERROR);

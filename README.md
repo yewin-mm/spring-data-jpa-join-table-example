@@ -26,6 +26,11 @@
 [linkedin-url]: https://www.linkedin.com/in/ye-win-1a33a292/
 [product-screenshot]: images/screenshot.png
 
+<h1 align="center">
+  Overview
+  <img src="https://github.com/yewin-mm/spring-data-jpa-join-table-example/blob/master/github/template/images/overview/jpa_join_column.png" /><br/>
+</h1>
+
 # spring-data-jpa-join-table-example
 * This is the sample backend microservice project for join table by using spring data jpa.
 
