@@ -61,7 +61,7 @@ This project is built with
 
 ## Getting Started
 This project is built with java, maven, postgresql and use project lombok as plugin.
-So, please make sure all are installed in you machine.
+So, please make sure all are installed in your machine.
 
 ### Before you begin
 If you are new in Git, Github and new in Spring Boot configuration structure, <br>
@@ -87,7 +87,7 @@ Prerequisites can be found in here [Spring Boot Application Instruction](https:/
 ### Instruction
 * Change your database username and password in `application.properties`.
 * Run the project in your IDE. Please make sure application was successfully running.
-* You can check in your database is that there has 'Role and User' table were auto created or not under postgres schema by database GUI tools like ***DBeaver***.
+* You can check in your database is that there has 'Role and User' table were auto created or not, under postgres schema by database GUI tools like ***DBeaver***.
 * Insert some data into 'Role' table in your database by querying in database console.
 * Find 'Role' table under postgres schema which will auto create by running application. 
 * If you can't find, just click refresh and see again under postgres schema.
@@ -122,4 +122,6 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push -u origin feature/yourname`)
 5. Open a Pull Request
+
+
 
